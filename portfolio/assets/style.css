@@ -1,0 +1,290 @@
+
+:root {
+    --green: rgb(11, 108, 94);
+  }
+
+body{
+    box-sizing: border-box;
+    height: 100%;
+}
+section{
+   width: 100%;
+   padding: 20px 0;
+   
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 60px;
+    color:var(--green);
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    font-size: 30px;
+    align-items: center;
+    margin: 5px
+}
+
+img{
+    border: 10px solid var(--green) ;
+    margin: 12px;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/image5.png);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+a{
+    font-size:40px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#hdiv1{
+    width:50%
+}
+
+#hdiv2{
+    width:50%
+}
+
+#h2header{
+    margin-left: 65%;
+   
+}
+
+
+.abm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+   
+}
+
+#abmh2{
+    margin-left:50%;
+}
+
+
+
+#abmp{
+    align-items: center;
+   
+}
+
+.abmdiv{
+    width: 35%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-right: 10px solid var(--green);   
+}
+
+.abmdiv1{
+    width: 60%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+
+.work{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work0{
+    width: 35%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right:10px solid var(--green);
+   
+}
+
+.work1{
+    width:60%;
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#workh2{
+    margin-left:67%;
+}
+
+
+.fig0{
+    position: relative;
+}
+
+.fig00{
+    position:absolute;
+    margin-top: -320px;
+    line-height: 0;
+    background-color: aqua;
+    color: black;
+    margin-left: 20px;
+
+}
+
+.fig01{
+    position: relative;
+}
+
+.fig001{
+    position:absolute;
+    margin-top: -120px;
+    line-height: 0;
+    margin-left: 20px;
+    background-color: aqua;
+    color: black;
+}
+
+#f1{
+    width: 35%;
+    height: 250px;
+    border-right: 10px solid var(--green);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#f2{
+    width: 60%;
+    height: 250x;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#ch1{
+margin-left: 55%;
+}
+
+#ch2{
+    padding: 0 70px;
+}
+
+
+
+
+
+/* Tablets - header changes color */
+@media screen and (max-width: 1514px) {
+    #h2header{
+      margin-left: 10%;
+    }
+  }
+
+  @media screen and (max-width: 1304px) {
+    #workh2{
+      margin-left: 25%;
+    }
+    #ch1{
+        margin-left: 25%;
+      }
+  }
+
+
+  @media screen and (max-width: 1179px) {
+    #h2header{
+      font-size:35px;
+    }
+    a{
+        font-size:35px;
+      }    
+  }
+  
+  @media screen and (max-width: 1075px) {
+    .abming{
+      width:125px;
+    }
+
+    h1{
+        font-size:40px;
+      }    
+  }
+  
+  @media screen and (max-width: 947px) {
+    h2{
+        font-size:35px;
+      }    
+  }
+
+  .img1:hover {
+    filter: contrast(10%);
+    width: 110%;
+    
+  }
+
+  .img2:hover {
+    filter: contrast(10%);
+    width: 110%;
+    
+  }
+
+  .img3:hover {
+    filter: contrast(10%);
+    width: 110%;
+    
+  }
+
+  .img4:hover {
+    filter: contrast(10%);
+    width: 110%;
+   
+    
+  }
+
+  .img5:hover {
+    filter: contrast(10%);
+    width: 110%;   
+  }
+
+  #f2 #link1 {
+    display: none;
+    padding: 1% 0;
+  }
+  
+  #f2:hover #link1 {
+    display: block;
+  }
+
+  #f2 #link2 {
+    display: none;
+    padding: 1% 0;
+  }
+  
+  #f2:hover #link2 {
+    display: block;
+  }
