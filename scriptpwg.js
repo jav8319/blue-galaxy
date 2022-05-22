@@ -140,21 +140,77 @@ var writePassword =function(){
 
   var passw = pass1.splice(pass2);
 
-    // Get references to the #generate element
+  var result00="";
+
+  var compChoice10="";
+  var compChoice20="";
+  var compChoice30="";
+  var compChoice40="";
+
+  if((userChoice1==="Y")){
+    index10 = Math.floor(Math.random() * options.letterUp.length);
+    compChoice10 = options.letterUp[index10];
+  }
+       
+  if((userChoice2==="Y")){
+    index20 = Math.floor(Math.random() * options.letterLow.length);
+    compChoice20 = options.letterLow[index20];
+  }
+       
+  if((userChoice3==="Y")){
+    index30 = Math.floor(Math.random() * options.numeric.length);
+    compChoice30 = options.numeric[index30];
+  }  
+       
+  if((userChoice4==="Y")){
+    index40 = Math.floor(Math.random() * options.specialCh.length);
+    compChoice40 = options.specialCh[index40];
+  }
+  
+  result00=[result00+compChoice10+compChoice20+compChoice30+compChoice40];
+  
+  var pass10 ="";
+  
+  pass10 = result00[0].split('');
+  
+  passw11=passw.slice(pass10.length);
+
+  passw00=passw11.concat(pass10);
+
+
+  // Get references to the #generate element
 
 
   // Write password to the #password input
-  var password = passw.join('');;
+  var password = passw00.join('');
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
-}
+};
 
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
