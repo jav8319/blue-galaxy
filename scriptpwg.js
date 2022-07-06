@@ -189,7 +189,7 @@ var writePassword =function(){
 
 };
 
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("button");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
