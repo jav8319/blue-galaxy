@@ -1,18 +1,16 @@
 
-// Assignment code here
-
 var writePassword =function(){
   var nCharactersy = window.prompt("How many characters the password must have? you can select between 8 to 128 characters");
   window.alert("if number input is not an integer, it will be round up to nearest integer");
   nCharacters=Math.round(nCharactersy)
 
   if (nCharacters>128) {
-  window.alert("your answer was incorrect, your answer by default is 8");
+  window.alert("your selection was incorrect, value by default is 8");
   nCharacters=8;
   } else if (
   nCharacters<8
   ) {
-  window.alert("your answer was incorrect, your answer by default is 8");
+  window.alert("your selection was incorrect, value by default is 8");
   nCharacters=8;
   }
 
@@ -26,7 +24,7 @@ var writePassword =function(){
   ) {
   userChoice1 ="N";   
   }else {
-  window.alert("your answer was incorrect, your answer by default is Y");
+  window.alert("your selection was incorrect, value by default is Y");
   userChoice1="Y";
   }
 
@@ -40,7 +38,7 @@ var writePassword =function(){
   ) {
   userChoice2 ="N";   
   } else {
-  window.alert("your answer was incorrect, your answer by default is Y");
+  window.alert("your selection was incorrect, value by default is Y");
   userChoice2="Y";
   }
 
@@ -54,7 +52,7 @@ var writePassword =function(){
   ) {
    userChoice3 ="N";
   } else {
-  window.alert("your answer was incorrect, your answer by default is Y");
+  window.alert("your selection was incorrect, value by default is Y");
   userChoice3="Y";
   }
 
@@ -68,7 +66,7 @@ var writePassword =function(){
   ) {
   userChoice4 ="N";
   } else {
-  window.alert("your answer was incorrect, your answer by default is Y");
+  window.alert("your selection was incorrect, value by default is Y");
   userChoice4="Y";
   }
 
@@ -178,10 +176,6 @@ var writePassword =function(){
   passw00=passw11.concat(pass10);
 
 
-  // Get references to the #generate element
-
-
-  // Write password to the #password input
   var password = passw00.join('');
   var passwordText = document.querySelector("#password");
 
@@ -191,7 +185,7 @@ var writePassword =function(){
 
 var generateBtn = document.querySelector("button");
 
-// Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
 
 
