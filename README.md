@@ -1,4 +1,8 @@
-# blue-galaxy
-This repository contains html documents created with Visual Studio Code 1.67. Each folder contains all the files to render the webpage that is within each folder.
+Table of content
+1.Description 2.Usage
 
-https://code.visualstudio.com
+Description
+The application creates a safe random password that can be from 8 to 128 characters long, it can include numbers, lower/upper cases, and special symbols
+
+Usage
+Go to rrrrrrrrrrrrr, then press the button "generate".  prompts will appear to set password preferences
