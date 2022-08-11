@@ -136,9 +136,12 @@ button[disabled] {
   }
 }
 
-.logos{
-  display: block;
-  text-align: center;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+     text-align: center;
 }
 
 @media (max-width: 394px) {
