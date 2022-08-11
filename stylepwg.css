@@ -135,3 +135,14 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+.logos{
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 394px) {
+  body{
+    height: Auto;
+  }
+}
